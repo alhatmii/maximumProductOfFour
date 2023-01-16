@@ -4,10 +4,6 @@ public class maximumProductOfFour {
 
 	static int maxProduct(int numbersArray[], int n) {
 
-//		if size is less than 4, returns with "no quadruple exists"
-		if (n < 4)
-			return -1;
-
 //		Using Integer from MIN_VALUE:
 		int max_product = Integer.MIN_VALUE;
 
@@ -42,14 +38,8 @@ public class maximumProductOfFour {
 		int n = numbersArray.length;
 		int max = maxProduct(numbersArray, n);
 
-//		if size is less than 4, returns with "no quadruple exists"
-		if (max == -1) {
-
-			System.out.println("No Quadruple Exists");
-		} else {
-			System.out.println("The Equation is " + numbersArray[n - 4] + " x " + numbersArray[n - 3] + " x "
-					+ numbersArray[n - 2] + " x " + numbersArray[n - 1] + " = " + max);
-			System.out.println("Maximum product is " + "|| " + max + " ||");
-		}
+		System.out.println("The Equation is " + numbersArray[n - 4] + " x " + numbersArray[n - 3] + " x "
+				+ numbersArray[n - 2] + " x " + numbersArray[n - 1] + " = " + max);
+		System.out.println("Maximum product is " + "|| " + max + " ||");
 	}
 }
